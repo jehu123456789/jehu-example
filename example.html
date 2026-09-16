@@ -237,8 +237,345 @@
     <br>
     <a href="./index.html">index</a>
     <br>
-    <br>
-    <br> <br>
+ 
+<p  style="border-radius: 25px;background-color: #04aa6d;padding: 20px;width: 200px;height: 1100px; text-align: center;float: inline-end;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam minus impedit voluptate deserunt magnam itaque qui vel recusandae consequatur. Id incidunt aperiam at aspernatur, obcaecati placeat. Sint, eaque minus.
+Consectetur suscipit asperiores labore nulla officia repellat nobis voluptates. Ipsum nobis reprehenderit at incidunt alias, quas harum ratione natus suscipit ullam! Debitis quas blanditiis, illo ratione sapiente provident cumque doloremque!
+Maxime optio earum incidunt eius voluptas accusamus, reprehenderit cumque et asperiores ipsum. Magni velit perferendis aliquam sit necessitatibus eveniet delectus asperiores labore sed saepe possimus nobis hic, nulla vero inventore!
+Natus ad ullam quis quisquam aut deserunt harum, neque reprehenderit quam voluptate molestias quasi officia necessitatibus sequi repellat! Ex dolor harum id totam iure ullam accusamus officia distinctio aspernatur sit!
+Cumque, unde ullam? Accusamus tempora, facilis earum voluptates necessitatibus amet iure commodi quod at aliquam deleniti quisquam consequatur natus hic obcaecati dolor odit quam delectus doloribus placeat? Totam, laborum sequi.</p>
+</div>
+    <br> <br><h1>CSS 3D Carousel</h1>
+    
+    <div class="container">
+        <div class="carousel">
+            <div class="card" style="--index:0;">1</div>
+            <div class="card" style="--index:1;">2</div>
+            <div class="card" style="--index:2;">3</div>
+            <div class="card" style="--index:3;">4</div>
+            <div class="card" style="--index:4;">5</div>
+            <div class="card" style="--index:5;">6</div>
+        </div>
+    </div>
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Poppins", sans-serif
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    img {
+        margin-bottom: -8px;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .app-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+        gap: 32px;
+        align-items: center
+    }
+
+    .clarity-grid {
+        display: grid;
+        grid-template-columns: minmax(280px, 1fr) minmax(0, 2fr);
+        gap: 32px;
+        align-items: center
+    }
+
+    @media (max-width:600px) {
+
+        .app-grid,
+        .clarity-grid {
+            grid-template-columns: 1fr
+        }
+    }
+</style>
+</head>
+
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+    <!-- Header with Slideshow -->
+    <header class="w3-display-container w3-center">
+        <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" commandfor="download"
+            command="show-modal">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i
+                class="fa fa-windows"></i></button>
+        <div class="mySlides w3-animate-opacity">
+            <img class="w3-image" src="/w3images/app.jpg" alt="Image 1" style="min-width:500px" width="1500"
+                height="1000">
+            <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+                <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                    <h1 class="w3-xlarge">Take photos with our app</h1>
+                    <hr class="w3-opacity">
+                    <p>Super simple installation: free of charge</p>
+                    <p><button class="w3-button w3-block w3-green w3-round" commandfor="download"
+                            command="show-modal">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i
+                                class="fa fa-windows"></i></button></p>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides w3-animate-opacity">
+            <img class="w3-image" src="/w3images/app2.jpg" alt="Image 2" style="min-width:500px" width="1500"
+                height="1000">
+            <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+                <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                    <h1 class="w3-xlarge w3-text-red"><b>CLICK!</b> Fast and Easy</h1>
+                    <hr class="w3-opacity">
+                    <p>Choose from thousands of features</p>
+                    <p><button class="w3-button w3-block w3-red w3-round" commandfor="download"
+                            command="show-modal">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i
+                                class="fa fa-windows"></i></button></p>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides w3-animate-opacity">
+            <img class="w3-image" src="/w3images/app4.jpg" alt="Image 3" style="min-width:500px" width="1500"
+                height="1000">
+            <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+                <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                    <h1 class="w3-xlarge">Smart Design</h1>
+                    <hr class="w3-opacity">
+                    <p>Customize photos as you go</p>
+                    <p><button class="w3-button w3-block w3-indigo w3-round" commandfor="download"
+                            command="show-modal">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i
+                                class="fa fa-windows"></i></button></p>
+                </div>
+            </div>
+        </div>
+        <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey"
+            onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+        <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i
+                class="fa fa-angle-right"></i></a>
+    </header>
+
+    <!-- The App Section -->
+    <div class="w3-padding-64 w3-white">
+        <div class="app-grid">
+            <div class="w3-container">
+                <h1 class="w3-jumbo"><b>The App</b></h1>
+                <h1 class="w3-xxxlarge w3-text-green"><b>Why buy it?</b></h1>
+                <p><span class="w3-xlarge">Take photos like a pro.</span> You should buy this app because lorem ipsum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" commandfor="download"
+                    command="show-modal">
+                    <i class="fa fa-download"></i> Download Application
+                </button>
+                <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i> <i
+                        class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
+            </div>
+            <div>
+                <img src="/w3images/img_app.jpg" alt="App preview" class="w3-image w3-right w3-hide-small" width="335"
+                    height="471">
+                <div class="w3-center w3-hide-large w3-hide-medium">
+                    <button class="w3-button w3-block w3-padding-large" commandfor="download" command="show-modal">
+                        <i class="fa fa-download"></i> Download Application
+                    </button>
+                    <img src="/w3images/img_app.jpg" alt="App preview" class="w3-image w3-margin-top" width="335"
+                        height="471">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Download Dialog -->
+    <dialog id="download" class="w3-animate-opacity">
+        <div class="w3-container w3-white w3-padding-32">
+            <button class="w3-button w3-transparent w3-right w3-xlarge" commandfor="download" command="close">
+                ×
+            </button>
+
+            <h2 class="w3-wide">DOWNLOAD</h2>
+            <p>Download the app in App Store, Google Play or Microsoft Store.</p>
+
+            <p>
+                <i class="fa fa-android w3-large"></i>
+                <i class="fa fa-apple w3-large"></i>
+                <i class="fa fa-windows w3-large"></i>
+            </p>
+
+            <p>
+                <input class="w3-input w3-border" type="email" placeholder="Enter email">
+            </p>
+
+            <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
+                commandfor="download" command="close">
+                Fake Download
+            </button>
+        </div>
+    </dialog>
+
+    <!-- Clarity Section -->
+    <div class="w3-padding-64 w3-light-grey">
+        <div class="clarity-grid">
+            <div>
+                <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/w3images/app5.jpg" alt="App"
+                    width="335" height="471">
+            </div>
+            <div class="w3-container">
+                <h1 class="w3-jumbo"><b>Clarity</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red"><b>Pixels, who?</b></h1>
+                <p><span class="w3-xlarge">A revolution in resolution.</span> Sharp and clear photos with the world's
+                    best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+        <h1 class="w3-jumbo"><b>Features</b></h1>
+        <p>This app is just so lorem ipsum.</p>
+
+        <div class="w3-grid"
+            style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:48px 16px;margin-top:64px">
+            <div>
+                <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
+                <p>Fast</p>
+            </div>
+            <div>
+                <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+                <p>Loved</p>
+            </div>
+            <div>
+                <i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
+                <p>Clarity</p>
+            </div>
+            <div>
+                <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
+                <p>Power</p>
+            </div>
+            <div>
+                <i class="fa fa-diamond w3-text-white w3-jumbo"></i>
+                <p>Sharp</p>
+            </div>
+            <div>
+                <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
+                <p>Cloud</p>
+            </div>
+            <div>
+                <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
+                <p>Global</p>
+            </div>
+            <div>
+                <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
+                <p>Storage</p>
+            </div>
+            <div>
+                <i class="fa fa-user w3-text-sand w3-jumbo"></i>
+                <p>Safe</p>
+            </div>
+            <div>
+                <i class="fa fa-shield w3-text-orange w3-jumbo"></i>
+                <p>Stable</p>
+            </div>
+            <div>
+                <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
+                <p>Connected</p>
+            </div>
+            <div>
+                <i class="fa fa-image w3-text-pink w3-jumbo"></i>
+                <p>HD</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="w3-padding-64 w3-center w3-white">
+        <h1 class="w3-jumbo"><b>Pricing</b></h1>
+        <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+        <div class="w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:64px">
+            <div class="w3-section">
+                <ul class="w3-ul w3-card w3-hover-shadow">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+                    <li class="w3-padding-16"><b>250</b> Photos</li>
+                    <li class="w3-padding-16"><b>10</b> Features</li>
+                    <li class="w3-padding-16"><b>No</b> Ads</li>
+                    <li class="w3-padding-16"><b>Office hours</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-opacity">$ 25</h2>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large" commandfor="download"
+                            command="show-modal"><i class="fa fa-download"></i> Download</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-section">
+                <ul class="w3-ul w3-card w3-hover-shadow">
+                    <li class="w3-red w3-xlarge w3-padding-32">Premium</li>
+                    <li class="w3-padding-16"><b>1000</b> Photos</li>
+                    <li class="w3-padding-16"><b>50</b> Features</li>
+                    <li class="w3-padding-16"><b>No</b> Ads</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-opacity">$ 99</h2>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large" commandfor="download" command="show-modal">
+                            <i class="fa fa-download"></i> Download</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+        <div class="w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Slideshow
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".mySlides");
+
+        showSlide(slideIndex);
+
+        function plusDivs(step) {
+            slideIndex = (slideIndex + step + slides.length) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? "block" : "none";
+            });
+        }
+    </script>
 </body>
 
 </html>
