@@ -41,7 +41,7 @@ li::marker{
     font-size: 30px;
 }
 p::selection{
-    color: blue;
+    color: rgba(47, 0, 255, 0.121);
     background-color: red;
 }
 img{
@@ -56,8 +56,7 @@ img:hover {
     margin: 0;
     padding: 0;
     overflow: visible;
-    border: 2px solid red;
-    background-color: aliceblue;
+    background-color: rgba(38, 115, 182, 0.978);
     display: flex;
     font-size: 50px;
     justify-content: space-between;
@@ -163,4 +162,48 @@ div.gallery-item div.desc {
   cursor: progress;
   background-color: red;
   text-align: center;
+}
+a[href] {
+    border: 2px solid red;
+}
+[title="flower"] {
+border: 5px solid yellow; 
+background-color: rgba(11, 185, 11, 0.986);
+}
+[class*="ma"]{
+    border: 3px solid blue;
+    background-color: rgba(0, 128, 0, 0.24);
+}
+form{
+    width: 50%;
+    background-color: #ccc;
+    padding: 10px;
+
+}
+input[type='text']{
+    display: block;
+    width: 100%;
+    margin: 5px 2px ;
+    padding: 5px 15px;
+}
+input[type="submit"]{
+width: 100%;
+background-color: #23c717;
+color: aliceblue;
+font-weight: bold;
+font-size: 18px;
+padding: 10px;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+input[type="submit"]:hover{
+    opacity: 0.7;
+}
+input:focus {
+    border: 3px solid red;
+    outline-color: red;
+    background-color:burlywood;
 }
